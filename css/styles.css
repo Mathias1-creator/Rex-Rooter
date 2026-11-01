@@ -320,3 +320,9 @@ blockquote.pull { margin: 0; padding: 18px 20px; border-left: 4px solid var(--re
 .review h3 { color: var(--navy); margin-bottom: .4em; }
 .review p { color: var(--muted); margin: 0; }
 .review { border-top: 4px solid var(--red); }
+
+/* Legal pages */
+.legal { max-width: 760px; }
+.legal h2 { font-size: 1.35rem; margin-top: 1.8em; }
+.legal ul { padding-left: 1.2em; }
+.legal li { margin-bottom: .4em; }
