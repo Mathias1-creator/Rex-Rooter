@@ -254,7 +254,7 @@ blockquote.pull { margin: 0; padding: 18px 20px; border-left: 4px solid var(--re
 /* Sticky mobile action bar */
 .action-bar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; height: var(--bar-h);
-  display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  display: grid; grid-template-columns: 1fr; gap: 10px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
   background: rgba(255,255,255,.97); border-top: 1px solid var(--line); box-shadow: 0 -6px 20px rgba(13,34,64,.12);
 }
 .action-bar .btn { min-height: 52px; padding: 8px 12px; }

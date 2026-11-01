@@ -3,13 +3,7 @@
   "use strict";
   document.documentElement.classList.remove("no-js");
 
-  // Real business number from the current site. Texting uses the same number until the client confirms a text-capable line.
-  var PHONE = "+18059292278";
-  var isApple = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
-  function smsLink(body) {
-    // iOS uses "&body=", Android uses "?body="
-    return "sms:" + PHONE + (isApple ? "&" : "?") + "body=" + encodeURIComponent(body);
-  }
+  var PHONE = "+18059292278"; // real business number from the current site
 
   /* ---------- Mobile nav ---------- */
   var toggle = document.querySelector(".nav-toggle");
@@ -27,19 +21,14 @@
     });
   }
 
-  /* ---------- Text links (generic) ---------- */
-  document.querySelectorAll("[data-sms]").forEach(function (a) {
-    a.setAttribute("href", smsLink(a.getAttribute("data-sms") || "Hi Rex's Rooter, I need help with a plumbing issue."));
-  });
-
   /* ---------- Problem picker ---------- */
+  var pickerStatus = document.getElementById("picker-status");
   document.querySelectorAll("[data-issue]").forEach(function (btn) {
     btn.addEventListener("click", function () {
-      var issue = btn.getAttribute("data-issue");
-      var msg = issue === "other"
-        ? "Hi Rex's Rooter, I have a plumbing problem: "
-        : "Hi Rex's Rooter, I need help with a " + issue + ". My address/city is: ";
-      window.location.href = smsLink(msg);
+      var label = btn.textContent.trim();
+      if (pickerStatus) pickerStatus.innerHTML = "Calling Rex&rsquo;s Rooter about: <strong>" + label + "</strong>. Have your address ready. " +
+        "If your phone doesn&rsquo;t dial, call <a href=\"tel:" + PHONE + "\"><strong>(805) 929-2278</strong></a>.";
+      window.location.href = "tel:" + PHONE;
     });
   });
 

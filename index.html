@@ -69,7 +69,6 @@
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1z"/></symbol>
-  <symbol id="i-text" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2zM7 9h10v2H7zm6 5H7v-2h6zm4-6H7V6h10z"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></symbol>
   <symbol id="i-drain" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></g></symbol>
   <symbol id="i-drop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 2.7S5 10 5 14.5a7 7 0 0014 0C19 10 12 2.7 12 2.7z"/></symbol>
@@ -121,7 +120,7 @@
       <a class="hero-phone" href="tel:+18059292278" aria-label="Call (805) 929-2278">(805) 929-2278</a>
       <div class="hero-ctas">
         <a class="btn btn--red" href="tel:+18059292278"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call Now</a>
-        <a class="btn btn--ghost" href="#problem" ><svg aria-hidden="true"><use href="#i-text"/></svg>Text Us Your Problem</a>
+        <a class="btn btn--ghost" href="services.html"><svg aria-hidden="true"><use href="#i-check"/></svg>See Our Services</a>
       </div>
       <p class="hero-area">Serving <strong>Paso Robles, Atascadero, Nipomo, Arroyo Grande, Templeton</strong> and all of San Luis Obispo &amp; Santa Barbara Counties.</p>
       <ul class="trust-row">
@@ -138,7 +137,7 @@
     <div class="container reveal">
       <span class="eyebrow">Fastest way to get help</span>
       <h2 id="problem-title">What's the problem?</h2>
-      <p class="lead">Tap your issue and we'll open a text message to Rex's Rooter with it already filled in. Just add your address and hit send.</p>
+      <p class="lead">Tap your issue to call us right now. Tell us what's going on and where you are, and we'll get a plumber headed your way.</p>
       <div class="picker">
         <button type="button" data-issue="clogged drain"><svg aria-hidden="true"><use href="#i-drain"/></svg>Clogged Drain</button>
         <button type="button" data-issue="leak"><svg aria-hidden="true"><use href="#i-drop"/></svg>Leak</button>
@@ -146,7 +145,7 @@
         <button type="button" data-issue="sewer backup"><svg aria-hidden="true"><use href="#i-sewer"/></svg>Sewer Backup</button>
         <button type="button" data-issue="other"><svg aria-hidden="true"><use href="#i-help"/></svg>Something Else</button>
       </div>
-      <p class="picker-note">Water spraying or sewage backing up? Don't wait for a text reply. <a href="tel:+18059292278"><strong>Call (805) 929-2278</strong></a>.</p>
+      <p class="picker-note" id="picker-status" role="status" aria-live="polite">Water spraying or sewage backing up? Shut off the main water valve first, then call <a href="tel:+18059292278"><strong>(805) 929-2278</strong></a>.</p>
     </div>
   </section>
 
@@ -178,13 +177,13 @@
           <a class="card-link" href="services.html#leak-detection">Learn more &rarr;</a>
         </article>
         <article class="card reveal">
-          <img class="card-img" src="images/svc-water-heaters-800.webp" alt="Rex's Rooter van with Rheem logo and Best Water Heater Prices" width="800" height="600" loading="lazy" decoding="async">
+          <img class="card-img" src="images/svc-water-heaters-800.webp" alt="Rex's Rooter van advertising water heaters and Best Water Heater Prices" width="800" height="600" loading="lazy" decoding="async">
           <h3><span class="icon-chip"><svg aria-hidden="true"><use href="#i-heater"/></svg></span>Water Heater Install &amp; Repair</h3>
           <p>Tankless installation or traditional water heater repair. We service all major brands and help improve energy efficiency.</p>
           <a class="card-link" href="services.html#water-heaters">Learn more &rarr;</a>
         </article>
         <article class="card reveal">
-          <img class="card-img" src="images/svc-fixtures-800.webp" alt="Rex's Rooter service van with Moen fixtures logo" width="800" height="600" loading="lazy" decoding="async">
+          <img class="card-img" src="images/svc-fixtures-800.webp" alt="Rex's Rooter service van with the company phone number" width="800" height="600" loading="lazy" decoding="async">
           <h3><span class="icon-chip"><svg aria-hidden="true"><use href="#i-faucet"/></svg></span>Fixture Installation &amp; Upgrades</h3>
           <p>Faucets, sinks, toilets, showers and garbage disposals, installed and replaced for reliable performance and a clean finish.</p>
           <a class="card-link" href="services.html#fixtures">Learn more &rarr;</a>
@@ -300,7 +299,7 @@
           </article>
           <article class="review" aria-roledescription="slide" aria-label="6 of 6">
             <h3>Free estimates</h3>
-            <p>Honest, competitive pricing up front. Call or text for a free estimate.</p>
+            <p>Honest, competitive pricing up front. Call for a free estimate.</p>
           </article>
         </div>
         <div class="carousel-controls">
@@ -350,7 +349,7 @@
         </div>
         <div class="faq-item">
           <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-7">Do you give free estimates?<span class="plus" aria-hidden="true"></span></button></h3>
-          <div class="faq-a" id="faq-7"><div><p>Yes. Call or text us to request a free estimate.</p></div></div>
+          <div class="faq-a" id="faq-7"><div><p>Yes. Call <a href="tel:+18059292278">(805) 929-2278</a> to request a free estimate.</p></div></div>
         </div>
         <div class="faq-item">
           <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-10">Do you serve Santa Barbara County?<span class="plus" aria-hidden="true"></span></button></h3>
@@ -371,7 +370,7 @@
       <p>Fast, friendly, professional service anywhere in San Luis Obispo and Santa Barbara Counties.</p>
       <div class="btn-row">
         <a class="btn btn--white" href="tel:+18059292278"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (805) 929-2278</a>
-        <a class="btn btn--ghost" href="sms:+18059292278" data-sms><svg aria-hidden="true"><use href="#i-text"/></svg>Text Us</a>
+        <a class="btn btn--ghost" href="#service-area"><svg aria-hidden="true"><use href="#i-pin"/></svg>Check Your Area</a>
       </div>
     </div>
   </section>
@@ -408,8 +407,7 @@
 </footer>
 
 <nav class="action-bar" aria-label="Quick contact">
-  <a class="btn btn--red" href="tel:+18059292278"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call Now</a>
-  <a class="btn btn--navy" href="sms:+18059292278" data-sms><svg aria-hidden="true"><use href="#i-text"/></svg>Text Us</a>
+  <a class="btn btn--red" href="tel:+18059292278"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call Now (805) 929-2278</a>
 </nav>
 
 <script src="js/main.js" defer></script>
