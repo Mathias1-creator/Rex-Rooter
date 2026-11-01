@@ -307,3 +307,12 @@ blockquote.pull { margin: 0; padding: 18px 20px; border-left: 4px solid var(--re
   .review { flex-basis: calc(33.333% - 11px); }
   .hero h1 { max-width: 16ch; }
 }
+
+/* Logo, card photos, reason cards */
+.brand-logo { height: 48px; width: auto; }
+.brand-text .brand-sub:first-child { color: var(--navy); font-weight: 700; }
+.card { overflow: hidden; }
+.card-img { width: calc(100% + 48px); max-width: none; margin: -24px -24px 18px; aspect-ratio: 16 / 10; object-fit: cover; }
+.review h3 { color: var(--navy); margin-bottom: .4em; }
+.review p { color: var(--muted); margin: 0; }
+.review { border-top: 4px solid var(--red); }

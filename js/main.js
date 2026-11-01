@@ -60,17 +60,21 @@
   if (form) {
     // Cities named on the current site
     var NAMED = ["paso robles", "atascadero", "nipomo", "arroyo grande", "templeton"];
-    // The site also says "Serving all of San Luis Obispo County": other SLO County communities & ZIP codes
+    // The site says "Serving all of San Luis Obispo County" and the trucks add SB County: other communities & ZIP codes
     var COUNTY = ["san luis obispo", "slo", "grover beach", "pismo beach", "shell beach", "oceano", "avila beach", "morro bay",
       "los osos", "baywood park", "cayucos", "cambria", "harmony", "san simeon", "santa margarita", "creston", "shandon",
-      "san miguel", "halcyon", "callender", "california valley", "cholame", "edna"];
+      "san miguel", "halcyon", "callender", "california valley", "cholame", "edna",
+      // Santa Barbara County (vehicles read "SLO County / SB County")
+      "santa maria", "orcutt", "guadalupe", "lompoc", "vandenberg", "los alamos", "los olivos", "buellton", "solvang", "santa ynez",
+      "ballard", "casmalia", "sisquoc", "new cuyama", "cuyama", "goleta", "santa barbara", "isla vista", "carpinteria", "montecito", "summerland"];
     var ZIPS = { "93446": "Paso Robles", "93447": "Paso Robles", "93422": "Atascadero", "93423": "Atascadero", "93444": "Nipomo",
       "93420": "Arroyo Grande", "93421": "Arroyo Grande", "93465": "Templeton",
       "93401": "San Luis Obispo", "93402": "Los Osos", "93403": "San Luis Obispo", "93405": "San Luis Obispo", "93406": "San Luis Obispo",
       "93407": "San Luis Obispo", "93408": "San Luis Obispo", "93410": "San Luis Obispo", "93412": "Los Osos", "93424": "Avila Beach",
       "93428": "Cambria", "93430": "Cayucos", "93432": "Creston", "93433": "Grover Beach", "93435": "Harmony", "93442": "Morro Bay",
       "93443": "Morro Bay", "93445": "Oceano", "93448": "Pismo Beach", "93449": "Pismo Beach", "93451": "San Miguel",
-      "93452": "San Simeon", "93453": "Santa Margarita", "93461": "Shandon", "93483": "Grover Beach" };
+      "93452": "San Simeon", "93453": "Santa Margarita", "93461": "Shandon", "93483": "Grover Beach",
+      "93454": "Santa Maria", "93455": "Santa Maria", "93456": "Santa Maria", "93458": "Santa Maria", "93457": "Orcutt", "93434": "Guadalupe", "93436": "Lompoc", "93437": "Vandenberg", "93438": "Lompoc", "93440": "Los Alamos", "93441": "Los Olivos", "93427": "Buellton", "93463": "Solvang", "93464": "Solvang", "93460": "Santa Ynez", "93429": "Casmalia", "93254": "New Cuyama", "93117": "Goleta", "93118": "Goleta", "93013": "Carpinteria", "93014": "Carpinteria", "93067": "Summerland", "93108": "Montecito", "93101": "Santa Barbara", "93102": "Santa Barbara", "93103": "Santa Barbara", "93105": "Santa Barbara", "93106": "Santa Barbara", "93107": "Santa Barbara", "93109": "Santa Barbara", "93110": "Santa Barbara", "93111": "Santa Barbara", "93116": "Santa Barbara", "93120": "Santa Barbara", "93121": "Santa Barbara", "93130": "Santa Barbara", "93140": "Santa Barbara", "93150": "Santa Barbara", "93160": "Santa Barbara", "93190": "Santa Barbara" };
     var input = document.getElementById("area-input");
     var out = document.getElementById("area-result");
     var callBtn = '<a class="btn btn--red btn--block" href="tel:' + PHONE + '">' +
@@ -90,7 +94,7 @@
         out.innerHTML = "<span>&#10003; Yes! Rex&rsquo;s Rooter serves " + title(city) + ". Call now and we&rsquo;ll get a plumber out to you.</span>" + callBtn;
       } else {
         out.classList.add("is-maybe");
-        out.innerHTML = "<span>We serve all of San Luis Obispo County. We didn&rsquo;t recognize that location. Give us a call and we&rsquo;ll tell you right away if we can help.</span>" + callBtn;
+        out.innerHTML = "<span>We serve all of San Luis Obispo and Santa Barbara Counties. We didn&rsquo;t recognize that location. Give us a call and we&rsquo;ll tell you right away if we can help.</span>" + callBtn;
       }
       out.focus();
     });

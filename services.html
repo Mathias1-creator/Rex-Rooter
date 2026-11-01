@@ -23,8 +23,9 @@
   "name": "Rex's Rooter Plumbing INC",
   "url": "https://mathias1-creator.github.io/Rex-Rooter/services.html",
   "telephone": "+1-805-929-2278",
+  "logo": "https://mathias1-creator.github.io/Rex-Rooter/images/logo.webp",
   "address": {"@type": "PostalAddress","streetAddress": "858 Primrose Ln","addressLocality": "Nipomo","addressRegion": "CA","postalCode": "93444","addressCountry": "US"},
-  "areaServed": "San Luis Obispo County, CA",
+  "areaServed": ["San Luis Obispo County, CA", "Santa Barbara County, CA"],
   "makesOffer": [
     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drain Cleaning & Sewer Jetting", "description": "Hydro jetting and camera inspection to clear clogged drains and sewer lines."}},
     {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Leak Detection & Pipe Repair", "description": "Slab leak detection, pipe replacement and repiping."}},
@@ -61,8 +62,8 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="./" aria-label="Rex's Rooter Plumbing home">
-      <span class="brand-mark" aria-hidden="true">R</span>
-      <span class="brand-text"><span class="brand-name">Rex's Rooter</span><span class="brand-sub">Plumbing &amp; Septic</span></span>
+      <img class="brand-logo" src="images/logo.webp" alt="Rex's Rooter Plumbing Inc." width="104" height="52">
+      <span class="brand-text"><span class="brand-sub">Plumbing &amp; Septic</span><span class="brand-sub">CA Lic #799841</span></span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
     <nav class="site-nav" id="site-nav" aria-label="Main">
@@ -70,7 +71,7 @@
         <li><a href="./">Home</a></li>
         <li><a href="services.html" aria-current="page">Services</a></li>
         <li><a href="./#service-area">Service Area</a></li>
-        <li><a href="./#reviews">Reviews</a></li>
+        <li><a href="./#why-rex">Why Us</a></li>
         <li><a href="./#faq">FAQ</a></li>
         <li><a class="btn btn--red" href="tel:+18059292278"><svg aria-hidden="true"><use href="#i-phone"/></svg>(805) 929-2278</a></li>
       </ul>
@@ -83,7 +84,7 @@
     <div class="container">
       <span class="badge" data-status style="background:rgba(255,255,255,.14);color:#fff"><span class="dot" aria-hidden="true"></span><span class="label">24/7 Emergency Service</span></span>
       <h1 style="margin-top:14px">24-hour SLO plumbing services</h1>
-      <p>Residential and commercial plumbing across San Luis Obispo County since 2000. Tap a service to call or text us about it.</p>
+      <p>Residential and commercial plumbing and septic across San Luis Obispo and Santa Barbara Counties since 2000. CA Lic #799841. Tap a service to call or text us about it.</p>
     </div>
   </section>
   <section class="section" style="padding-top:24px">
@@ -95,16 +96,17 @@
         <ul><li>Burst and leaking pipes</li><li>Overflowing toilets</li><li>No hot water</li><li>Sewer backups</li></ul>
         <div class="btn-row">
           <a class="btn btn--red" href="tel:+18059292278"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (805) 929-2278</a>
-          <a class="btn btn--outline" href="sms:+18059292278" data-sms="Hi Rex's Rooter, I need help with emergency plumbing, available 24/7. My city is: "><svg aria-hidden="true"><use href="#i-text"/></svg>Text Us</a>
+          <a class="btn btn--outline" href="sms:+18059292278" data-sms="Hi Rex's Rooter, I have a plumbing emergency. My city is: "><svg aria-hidden="true"><use href="#i-text"/></svg>Text Us</a>
         </div>
       </div>
       
+  <img src="images/svc-emergency-800.webp" alt="Rex's Rooter service van showing the 24/7 number 929-2278" width="800" height="600" loading="lazy" decoding="async" style="border-radius:14px;width:100%;aspect-ratio:4/3;object-fit:cover">
     </article>
     <article class="service-block reveal" id="drain-cleaning">
       <div>
         <h2><span class="icon-chip" style="display:inline-grid;vertical-align:middle;margin-right:10px"><svg aria-hidden="true" width="26" height="26"><use href="#i-drain"/></svg></span>Drain Cleaning &amp; Sewer Jetting</h2>
         <p>Clogged drains or backed-up sewer lines? Our plumbers use hydro jetting and camera inspection technology to clean and clear your system efficiently. Fast, effective drain cleaning for homes and businesses.</p>
-        <ul><li>Hydro jetting</li><li>Sewer camera inspection</li><li>Kitchen, bath and main line clogs</li></ul>
+        <ul><li>Hydro jetting</li><li>Sewer camera inspection</li><li>Kitchen, bath and main line clogs</li><li>Sewer line replacement &amp; repair</li></ul>
         <div class="btn-row">
           <a class="btn btn--red" href="tel:+18059292278"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (805) 929-2278</a>
           <a class="btn btn--outline" href="sms:+18059292278" data-sms="Hi Rex's Rooter, I need help with drain cleaning and sewer jetting. My city is: "><svg aria-hidden="true"><use href="#i-text"/></svg>Text Us</a>
@@ -123,30 +125,33 @@
         </div>
       </div>
       
+  <img src="images/svc-leaks-800.webp" alt="Rex's Rooter van listing leaks and sewer line replacement and repair" width="800" height="600" loading="lazy" decoding="async" style="border-radius:14px;width:100%;aspect-ratio:4/3;object-fit:cover">
     </article>
     <article class="service-block reveal" id="water-heaters">
       <div>
         <h2><span class="icon-chip" style="display:inline-grid;vertical-align:middle;margin-right:10px"><svg aria-hidden="true" width="26" height="26"><use href="#i-heater"/></svg></span>Water Heater Installation &amp; Repair</h2>
         <p>Whether you need tankless water heater installation or a traditional water heater repair, we've got you covered. We service all major brands and help improve your home's energy efficiency.</p>
-        <ul><li>Tankless water heater installation</li><li>Tank water heater repair and replacement</li><li>All major brands</li></ul>
+        <ul><li>Tankless water heater installation</li><li>Tank water heater repair and replacement</li><li>All major brands, including Rheem</li><li>Best water heater prices</li></ul>
         <div class="btn-row">
           <a class="btn btn--red" href="tel:+18059292278"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (805) 929-2278</a>
           <a class="btn btn--outline" href="sms:+18059292278" data-sms="Hi Rex's Rooter, I need help with water heater installation and repair. My city is: "><svg aria-hidden="true"><use href="#i-text"/></svg>Text Us</a>
         </div>
       </div>
       
+  <img src="images/svc-water-heaters-800.webp" alt="Rex's Rooter van with Rheem logo and Best Water Heater Prices slogan" width="800" height="600" loading="lazy" decoding="async" style="border-radius:14px;width:100%;aspect-ratio:4/3;object-fit:cover">
     </article>
     <article class="service-block reveal" id="fixtures">
       <div>
         <h2><span class="icon-chip" style="display:inline-grid;vertical-align:middle;margin-right:10px"><svg aria-hidden="true" width="26" height="26"><use href="#i-faucet"/></svg></span>Fixture Installation &amp; Upgrades</h2>
         <p>Upgrade your kitchen or bathroom with professional fixture installation. We install and replace faucets, sinks, toilets, showers and garbage disposals for reliable performance and a clean finish.</p>
-        <ul><li>Faucets and sinks</li><li>Toilets and showers</li><li>Garbage disposals</li></ul>
+        <ul><li>Faucets and sinks</li><li>Toilets and showers</li><li>Garbage disposals</li><li>Moen faucets and fixtures</li></ul>
         <div class="btn-row">
           <a class="btn btn--red" href="tel:+18059292278"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (805) 929-2278</a>
           <a class="btn btn--outline" href="sms:+18059292278" data-sms="Hi Rex's Rooter, I need help with fixture installation and upgrades. My city is: "><svg aria-hidden="true"><use href="#i-text"/></svg>Text Us</a>
         </div>
       </div>
       
+  <img src="images/svc-fixtures-800.webp" alt="Rex's Rooter service van with Moen fixtures logo" width="800" height="600" loading="lazy" decoding="async" style="border-radius:14px;width:100%;aspect-ratio:4/3;object-fit:cover">
     </article>
     <article class="service-block reveal" id="commercial">
       <div>
@@ -163,8 +168,8 @@
     <article class="service-block reveal" id="septic">
       <div>
         <h2><span class="icon-chip" style="display:inline-grid;vertical-align:middle;margin-right:10px"><svg aria-hidden="true" width="26" height="26"><use href="#i-sewer"/></svg></span>Septic Service</h2>
-        <p>Rex's Rooter does plumbing <em>and</em> septic, with our own septic pumping truck on the road in SLO County.</p>
-        
+        <p>Rex's Rooter does plumbing <em>and</em> septic, with our own septic pumping truck on the road in SLO and Santa Barbara Counties.</p>
+        <ul><li>Septic tank pumping</li><li>Serving SLO County &amp; SB County</li></ul>
         <div class="btn-row">
           <a class="btn btn--red" href="tel:+18059292278"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call (805) 929-2278</a>
           <a class="btn btn--outline" href="sms:+18059292278" data-sms="Hi Rex's Rooter, I need help with septic service. My city is: "><svg aria-hidden="true"><use href="#i-text"/></svg>Text Us</a>
@@ -191,10 +196,9 @@
     <div class="footer-grid">
       <div>
         <h2>Rex's Rooter Plumbing INC</h2>
-        <p>Licensed &amp; insured plumbers, San Luis Obispo County, CA.<br>CA License #: <span class="todo">[LICENSE # NEEDED]</span></p>
+        <p>Licensed &amp; insured plumbers.<br>CA Contractor License #799841</p>
         <a class="footer-phone" href="tel:+18059292278">(805) 929-2278</a>
         <p style="margin-top:12px"><svg aria-hidden="true" width="18" height="18" style="vertical-align:-3px"><use href="#i-pin"/></svg> 858 Primrose Ln, Nipomo, CA 93444</p>
-        <p>Email: <span class="todo">[EMAIL NEEDED]</span></p>
       </div>
       <div>
         <h2>Services</h2>
@@ -209,8 +213,8 @@
       </div>
       <div>
         <h2>Service Area</h2>
-        <p>Paso Robles, Atascadero, Nipomo, Arroyo Grande, Templeton, and all of San Luis Obispo County.</p>
-        <p>Hours: 24/7 emergency service.<br>Office hours: <span class="todo">[HOURS NEEDED]</span></p>
+        <p>Paso Robles, Atascadero, Nipomo, Arroyo Grande, Templeton, and all of San Luis Obispo &amp; Santa Barbara Counties.</p>
+        <p>Open 24/7 for emergency plumbing.</p>
       </div>
     </div>
     <div class="footer-bottom">&copy; <span id="year">2026</span> Rex's Rooter Plumbing INC. All rights reserved.</div>
